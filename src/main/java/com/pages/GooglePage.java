@@ -1,12 +1,13 @@
 package com.pages;
 
-import static utils.SeleniumUtils.click;
-import static utils.SeleniumUtils.sendKeys;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
 import com.driver.DriverManager;
+import com.utils.SeleniumUtils;
+
+
+
 
 public class GooglePage {
 
@@ -14,9 +15,10 @@ public class GooglePage {
 	private static final By BTN_LOGIN = By.id("btnLogin");
 
 	private GooglePage setGoogleSearchTerm(String searchterm) {
-		sendKeys(TXTBOX_GOOGLESEARCH, searchterm, "searchTerm");
+		SeleniumUtils.sendKeys(TXTBOX_GOOGLESEARCH, searchterm, "searchTerm");
 		return this;
 	}
+
 
 	private GoogleSearchResultPage clickGoogleSearch(String searchterm) {
 		DriverManager.getDriver().findElement(TXTBOX_GOOGLESEARCH).sendKeys(Keys.ENTER);

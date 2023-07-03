@@ -1,8 +1,5 @@
 package com.tests;
 
-import java.sql.DriverManager;
-
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,8 +8,6 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.pages.GooglePage;
-import com.pages.LoginPage;
-import com.reports.ExtentReport;
 
 public class GoogleDemoTest extends BaseTest{
   

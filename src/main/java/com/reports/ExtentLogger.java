@@ -1,8 +1,7 @@
 package com.reports;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
-
-import utils.ScreenshotUtils;
+import com.utils.ScreenshotUtils;
 
 
 public final class ExtentLogger {
