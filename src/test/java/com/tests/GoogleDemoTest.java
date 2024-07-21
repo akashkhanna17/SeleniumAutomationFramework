@@ -15,6 +15,7 @@ public class GoogleDemoTest extends BaseTest{
 	private GoogleDemoTest() {
 		
 	}
+	
 	@Test
 	public void test() {
 		
