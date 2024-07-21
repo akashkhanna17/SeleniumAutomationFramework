@@ -40,4 +40,5 @@ public class GoogleDemoTest extends BaseTest{
         String actualResult = gp.googleSearch("testing").getFirstResult();
         Assert.assertEquals(actualResult, "What is Software Testing and How Does it Work?");
         extent.flush();
-	}}
+	}
+	}
